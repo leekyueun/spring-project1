@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class EventController {
-    @GetMapping("/info/{temp}/{humidity}")
+    @PostMapping("/info/{temp}/{humidity}")
     public String temp(@PathVariable String temp, @PathVariable String humidity) {
         return "/info/info";
     }
